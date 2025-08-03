@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8"><title>QBcore Wiki 多言語版</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body>
+<header id="title">【サーバー名】 QBcore RP Wiki</header>
+<nav><a href="index.html" data-key="nav_home">🏠 ホーム</a></nav>
+<main>
+<div style="margin-bottom:10px;">
+  <button class="btn" onclick="setLang('jp')">🇯🇵 日本語</button>
+  <button class="btn" onclick="setLang('en')">🇬🇧 English</button>
+</div>
+<input id="searchBar" type="text" placeholder="🔍 サイト内検索..." onkeyup="filterContent()">
+<section class="card">
+  <h2 data-key="welcome_title">ようこそ！</h2>
+  <p data-key="welcome_text">[サーバー名]はFiveM QBcoreを使用した日本向けRPサーバーです。</p>
+  <button class="btn" onclick="playSound()">🔊 サウンドテスト</button>
+  <button class="btn" onclick="toggleDark()">🌙 ダーク/ライト切替</button>
+</section>
+<section class="card"><h2>🌐 サーバーステータス</h2><div id="serverStatus">取得中...</div></section>
+</main></body></html>

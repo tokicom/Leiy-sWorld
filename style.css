@@ -1,0 +1,15 @@
+/* 多言語版スタイル */
+:root {--bg-dark:#0e0e0e;--bg-light:#fff;--accent:#3a9ff5;--accent2:#00ffcc;--text-dark:#eee;--text-light:#222;}
+body{margin:0;font-family:'Segoe UI',sans-serif;background:var(--bg-dark);color:var(--text-dark);transition:background .3s,color .3s;}
+body.light{background:var(--bg-light);color:var(--text-light);}
+header{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:15px;font-size:24px;color:#fff;text-shadow:1px 1px 3px #000;}
+nav{background:#1a1a1a;width:240px;position:fixed;top:0;bottom:0;left:0;padding-top:80px;}
+nav a{display:block;padding:12px 20px;color:#fff;text-decoration:none;font-weight:bold;}
+nav a:hover{background:rgba(255,255,255,0.1);}
+main{margin-left:260px;padding:20px;max-width:1000px;}
+#searchBar{width:100%;padding:10px;border:none;margin-bottom:10px;border-radius:4px;}
+.card{background:rgba(20,20,20,0.8);color:#fff;padding:15px;border:1px solid rgba(255,255,255,0.1);border-radius:8px;margin-bottom:20px;backdrop-filter:blur(6px);animation:fadeIn .5s ease;}
+.card img{width:100%;border-radius:5px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.btn{background:var(--accent);color:#fff;border:none;padding:10px 16px;border-radius:4px;font-weight:bold;cursor:pointer;}
+.btn:hover{background:var(--accent2);}
